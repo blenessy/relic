@@ -1,7 +1,7 @@
 
 
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(__MINGW32__)
     #include <malloc.h>
 
     // Dynamiclly allocates an array of "Type" with the specified size on the stack. 

@@ -36,6 +36,7 @@ message("   SHLIB=[off|on] Build shared library.")
 message("   STLIB=[off|on] Build static library.")
 message("   STBIN=[off|on] Build static binaries.")
 message("   AMALG=[off|on] Build amalgamation for better performance.\n")
+message("   JULIA=[off|on] Build julia support functions.\n")
 
 option(DEBUG "Build with debugging support" off)
 option(PROFL "Build with profiling support" off)
@@ -51,6 +52,7 @@ option(SHLIB "Build shared library" on)
 option(STLIB "Build static library" on)
 option(STBIN "Build static binaries" off)
 option(AMALG "Build amalgamation" off)
+option(JULIA "Build julia support functions" off)
 
 message(STATUS "Number of times each test or benchmark is ran (default = 50, 1000):\n")
 

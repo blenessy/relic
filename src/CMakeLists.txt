@@ -51,6 +51,10 @@ if (BENCH GREATER 0)
 	list(APPEND RELIC_SRCS "relic_bench.c")
 endif(BENCH GREATER 0)
 
+if (JULIA)
+	list(APPEND RELIC_SRCS "relic_julia.c")
+endif(JULIA)
+
 if (WITH_BN)
 	list(APPEND RELIC_SRCS ${BN_SRCS})
 	file(GLOB TEMP low/easy/relic_bn*.c)
